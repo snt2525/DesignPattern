@@ -7,7 +7,6 @@ public class Starter {
 	public static void main(String[] args) {
 		queue = new LinkedBlockingQueue();
 		
-		//BlockingQueue queue = new LinkedBlockingQueue();
 		Thread producer = new Thread(new Producer(queue));
 		Thread consumer = new Thread(new Consumer(queue));
 		
